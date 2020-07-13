@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChildViewController" customModule="BottomSheet" customModuleProvider="target">
+            <connections>
+                <outlet property="mainStackView" destination="SM6-xw-IT6" id="MWf-cf-bKa"/>
+                <outlet property="nameLabel" destination="E1P-ul-gOj" id="ooE-zz-f1g"/>
+                <outlet property="stackView" destination="RPp-JX-o45" id="D48-PW-aDo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SM6-xw-IT6">
+                    <rect key="frame" x="0.0" y="44" width="414" height="92"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ylJ-bY-3cy">
+                            <rect key="frame" x="177" y="0.0" width="60" height="4"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="L7k-ZW-wH4"/>
+                                <constraint firstAttribute="height" constant="4" id="jSM-hL-tdH"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8pD-Do-2sI">
+                            <rect key="frame" x="0.0" y="12" width="414" height="80"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Петров Петр Петрович" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1P-ul-gOj">
+                                    <rect key="frame" x="16" y="20" width="382" height="41"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="E1P-ul-gOj" secondAttribute="trailing" constant="16" id="5EW-xM-M37"/>
+                                <constraint firstItem="E1P-ul-gOj" firstAttribute="leading" secondItem="8pD-Do-2sI" secondAttribute="leading" constant="16" id="8Zh-XK-eQw"/>
+                                <constraint firstItem="E1P-ul-gOj" firstAttribute="top" secondItem="8pD-Do-2sI" secondAttribute="top" constant="20" id="TEu-id-aCI"/>
+                                <constraint firstAttribute="bottom" secondItem="E1P-ul-gOj" secondAttribute="bottom" constant="19" id="dsu-CL-kcw"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="8pD-Do-2sI" firstAttribute="leading" secondItem="SM6-xw-IT6" secondAttribute="leading" id="Mmg-2O-MM0"/>
+                        <constraint firstAttribute="trailing" secondItem="8pD-Do-2sI" secondAttribute="trailing" id="uPR-kf-BjJ"/>
+                        <constraint firstItem="ylJ-bY-3cy" firstAttribute="centerX" secondItem="SM6-xw-IT6" secondAttribute="centerX" id="xOW-L8-Nmv"/>
+                    </constraints>
+                </stackView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQf-s7-1xI">
+                    <rect key="frame" x="0.0" y="136" width="414" height="760"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RPp-JX-o45">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="166.5"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vDL-LP-XyK">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="166.5"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES" lookupSuggestion="YES"/>
+                                </textView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RPp-JX-o45" firstAttribute="top" secondItem="nQf-s7-1xI" secondAttribute="top" id="2LQ-83-L3j"/>
+                        <constraint firstItem="RPp-JX-o45" firstAttribute="leading" secondItem="nQf-s7-1xI" secondAttribute="leading" id="4nY-eQ-vtR"/>
+                        <constraint firstAttribute="trailing" secondItem="RPp-JX-o45" secondAttribute="trailing" id="6ga-iz-kyl"/>
+                        <constraint firstItem="RPp-JX-o45" firstAttribute="centerX" secondItem="nQf-s7-1xI" secondAttribute="centerX" id="fUp-X9-9hZ"/>
+                        <constraint firstAttribute="bottom" secondItem="RPp-JX-o45" secondAttribute="bottom" id="iRJ-HU-eSI"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="nQf-s7-1xI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ifh-YT-Ond"/>
+                <constraint firstAttribute="bottom" secondItem="nQf-s7-1xI" secondAttribute="bottom" id="ThQ-tH-XTL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SM6-xw-IT6" secondAttribute="trailing" id="Wtx-im-4Np"/>
+                <constraint firstItem="nQf-s7-1xI" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nfL-nG-5lY"/>
+                <constraint firstItem="nQf-s7-1xI" firstAttribute="top" secondItem="SM6-xw-IT6" secondAttribute="bottom" id="ouX-Ld-Dg7"/>
+                <constraint firstItem="SM6-xw-IT6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="toS-xM-6va"/>
+                <constraint firstItem="SM6-xw-IT6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uaE-mW-5Cv"/>
+                <constraint firstItem="nQf-s7-1xI" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="zG8-9i-W7e"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="140.625"/>
+        </view>
+    </objects>
+</document>
